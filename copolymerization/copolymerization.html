@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">-->
+  <link rel="stylesheet" type="text/css" href="copolymerization.css">
+
+  <script src="jquery-3.1.1.js"></script>
+  <script src="copolymerization.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://maurizzzio.github.io/function-plot/js/function-plot.js"></script>
+
+</head>
+<body>
+  <div class="copolymerization-div">
+    <h1>Расчёт констант сополимеризации r<sub class="font-size-index">1</sub> и
+      r<sub class="font-size-index">2</sub></h1>
+    <hr>
+
+    <div class="block-step">
+      <p class="steps">Шаг 1. Введите количество экспериментальных данных (n).</p>
+      <div class="step-one-input-block">
+        <input class="input-n" type="text" placeholder="n">
+        <button class="build-table">Построить таблицу</button>
+        <div class="empty-div"></div>
+      </div>
+    </div>
+
+    <div class="block-step">
+      <p class="steps">Шаг 2. Введите значения
+          параметров <span class="params">M<sub>1</sub></span> и
+          <span class="params">m<sub>1</sub></span> в Таблицу 1.1.</p>
+
+      <table class="params-table">
+        <caption>Таблица 1.1. Таблица исходных данных.</caption>
+        <tr>
+          <td class="width-ten">n</td>
+          <td>M<sub>1</sub></td>
+          <td>m<sub>1</sub></td>
+          <td>M<sub>2</sub>*</td>
+          <td>m<sub>2</sub>*</td>
+        </tr>
+        <tr class="data-row">
+          <td class="counter-n width-ten"></td>
+          <td class="cell-M1"><input type="number" min="0" max="100" step="any"></td>
+          <td class="cell-m1"><input type="number" min="0" max="100" step="any"></td>
+          <td class="count-M2"></td>
+          <td class="count-m2"></td>
+        </tr>
+      </table>
+
+      <aside>* значения M<sub>2</sub> и m<sub>2</sub> будут вычислены автоматически.</aside>
+    </div>
+
+    <div class="block-step">
+      <p class="steps">Шаг 3. Рассчитайте значения констант сополимеризации
+          <span class="params">r<sub>1</sub></span> и
+          <span class="params">r<sub>2</sub></span>.</p>
+      <table class="results-table">
+        <caption>Таблица 1.2. Константы сополимеризации.</caption>
+        <tr>
+          <td class="results-td">r<sub>1</sub></td>
+          <td class="results-td">r<sub>2</sub></td>
+        </tr>
+        <tr>
+          <td class="results-td result-r1"></td>
+          <td class="results-td result-r2"></td>
+        </tr>
+      </table>
+      <button class="count-constants">Рассчитать константы</button>
+    </div>
+  </div>
+</body>
+</html>

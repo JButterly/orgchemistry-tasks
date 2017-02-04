@@ -1,0 +1,162 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #004d50;
+  font-size: 20px;
+}
+
+.copolymerization-div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+hr {
+  width: 80%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0),
+                    rgba(0, 77, 80, 1), rgba(0, 0, 0, 0));
+}
+
+.font-size-index {
+  font-size: 0.6em;
+}
+
+.block-step {
+  width: 80%;
+  margin: 0 auto;
+}
+
+p.steps {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 100;
+}
+
+.step-one-input-block {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.params {
+  font-weight: 400;
+}
+
+input {
+  height: 30px;
+  width: 170px;
+  border-radius: 2px;
+  border-color: #004d50;
+  border-width: 1px;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  height: 30px;
+  width: 170px;
+  border-radius: 2px;
+  border-width: 1px;
+  font-size: 0.7em;
+  font-weight: 300;
+  background-color: #004d50;
+  border-color: #004d50;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button.count-constants {
+  display: block;
+  margin: 25px auto;
+}
+
+.input-n, .build-table {
+  float: left;
+}
+
+.empty-div {
+  clear: both;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+table, td {
+  border: 1px solid #004d50;
+  text-align: center;
+  padding: 10px;
+}
+
+table.params-table {
+  counter-reset: each-first-td;
+}
+
+.counter-n::before {
+  counter-increment: each-first-td;
+  content: counter(each-first-td);
+}
+
+table.results-table {
+  width: 80%;
+  margin: 0 auto;
+}
+
+table.results-table tr {
+  height: 48px;
+}
+
+td.results-td {
+  width: 50%;
+}
+
+td {
+  width: 22.5%;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+td.width-ten {
+  width: 10%;
+}
+
+caption {
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+td input {
+  width: 100%;
+  border: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+aside {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.block-step:last-child {
+  margin-bottom: 30px;
+}
