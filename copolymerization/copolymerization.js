@@ -33,6 +33,8 @@ $( document ).ready(function() {
         tr.find(".count-m2").html('');
         $(".params-table tbody").append(focusOut(tr));
       };
+    } else if (parseInt($(".input-n").val()) < 0) {
+      return false;
     } else {
       while ($(".params-table .data-row").length > $(".input-n").val()) {
         $(".params-table .data-row:last-child").remove();

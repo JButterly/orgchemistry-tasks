@@ -19,10 +19,18 @@
       r<sub class="font-size-index">2</sub></h1>
     <hr>
 
+    <div class="comment-block">
+      <p>Обозначения:</p>
+      <p>M<sub>1</sub> - содержание мономера 1 в исходной смеси, мол. &#37;;</p>
+      <p>m<sub>1</sub> - содержание звеньев мономера 1 в сополимере, мол. &#37;.</p>
+    </div>
+
+    <hr>
+
     <div class="block-step">
-      <p class="steps">Шаг 1. Введите количество экспериментальных данных (n).</p>
+      <p class="steps">Шаг 1. Введите количество опытов (n &#8805; 3).</p>
       <div class="step-one-input-block">
-        <input class="input-n" type="text" placeholder="n">
+        <input class="input-n" type="number" placeholder="n">
         <button class="build-table">Построить таблицу</button>
         <div class="empty-div"></div>
       </div>
@@ -30,22 +38,21 @@
 
     <div class="block-step">
       <p class="steps">Шаг 2. Введите значения
-          параметров <span class="params">M<sub>1</sub></span> и
-          <span class="params">m<sub>1</sub></span> в Таблицу 1.1.</p>
+          параметров M<sub>1</sub> и m<sub>1</sub> в Таблицу 1.1.</p>
 
       <table class="params-table">
         <caption>Таблица 1.1. Таблица исходных данных.</caption>
         <tr>
-          <td class="width-ten">n</td>
-          <td>M<sub>1</sub></td>
-          <td>m<sub>1</sub></td>
-          <td>M<sub>2</sub>*</td>
-          <td>m<sub>2</sub>*</td>
+          <td class="width-ten font-weight-400">n</td>
+          <td class="font-weight-400">M<sub>1</sub>, мол. &#37;</td>
+          <td class="font-weight-400">m<sub>1</sub>, мол. &#37;</td>
+          <td class="font-weight-400">M<sub>2</sub>*, мол. &#37;</td>
+          <td class="font-weight-400">m<sub>2</sub>*, мол. &#37;</td>
         </tr>
         <tr class="data-row">
-          <td class="counter-n width-ten"></td>
-          <td class="cell-M1"><input type="number" min="0" max="100" step="any"></td>
-          <td class="cell-m1"><input type="number" min="0" max="100" step="any"></td>
+          <td class="counter-n width-ten font-weight-400"></td>
+          <td class="cell-M1 background-color-cell"><input type="number" min="0" max="100" step="any"></td>
+          <td class="cell-m1 background-color-cell"><input type="number" min="0" max="100" step="any"></td>
           <td class="count-M2"></td>
           <td class="count-m2"></td>
         </tr>
@@ -56,13 +63,12 @@
 
     <div class="block-step">
       <p class="steps">Шаг 3. Рассчитайте значения констант сополимеризации
-          <span class="params">r<sub>1</sub></span> и
-          <span class="params">r<sub>2</sub></span>.</p>
+          r<sub>1</sub> и r<sub>2</sub>.</p>
       <table class="results-table">
         <caption>Таблица 1.2. Константы сополимеризации.</caption>
         <tr>
-          <td class="results-td">r<sub>1</sub></td>
-          <td class="results-td">r<sub>2</sub></td>
+          <td class="results-td font-weight-400">r<sub>1</sub></td>
+          <td class="results-td font-weight-400">r<sub>2</sub></td>
         </tr>
         <tr>
           <td class="results-td result-r1"></td>

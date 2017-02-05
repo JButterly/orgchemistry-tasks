@@ -1,43 +1,54 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #004d50;
+  color: #3B3838;
+  /*color: #004d50;*/
   font-size: 20px;
+  background-color: #F5F5F5;
 }
 
 .copolymerization-div {
-  width: 90%;
+  width: 690px;
   margin: 0 auto;
 }
 
 h1 {
-  font-size: 1.8em;
-  font-weight: 300;
+  font-size: 1.3em;
+  font-weight: 400;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 hr {
-  width: 80%;
+  width: 100%;
   border: 0;
   height: 1px;
+  /*background-image: linear-gradient(to right, rgba(0, 0, 0, 0),
+                    rgba(0, 77, 80, 1), rgba(0, 0, 0, 0));*/
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0),
-                    rgba(0, 77, 80, 1), rgba(0, 0, 0, 0));
+                    rgba(59, 56, 56, 1), rgba(0, 0, 0, 0));
 }
 
 .font-size-index {
   font-size: 0.6em;
 }
 
+.comment-block {
+  padding-left: 30px;
+  font-size: 0.8em;
+  font-weight: 100;
+  line-height: 15px;
+}
+
 .block-step {
-  width: 80%;
+  width: 690px;
   margin: 0 auto;
 }
 
 p.steps {
   text-align: center;
-  font-size: 1.1em;
-  font-weight: 100;
+  font-size: 0.9em;
+  font-weight: 400;
 }
 
 .step-one-input-block {
@@ -45,15 +56,12 @@ p.steps {
   margin: 0 auto;
 }
 
-.params {
-  font-weight: 400;
-}
-
 input {
   height: 30px;
   width: 170px;
   border-radius: 2px;
-  border-color: #004d50;
+  border-color: #3B3838;
+  /*border-color: #004d50;*/
   border-width: 1px;
   text-align: center;
   font-size: 0.9em;
@@ -74,9 +82,12 @@ button {
   border-width: 1px;
   font-size: 0.7em;
   font-weight: 300;
-  background-color: #004d50;
+  background-color: #3B3838;
+  border-color: #3B3838;
+  /*background-color: #004d50;
   border-color: #004d50;
-  color: white;
+  color: white;*/
+  color: #F5F5F5;
   margin-left: 10px;
   cursor: pointer;
 }
@@ -101,9 +112,18 @@ table {
 }
 
 table, td {
-  border: 1px solid #004d50;
+  border: 1px solid #3B3838;
+  /*border: 1px solid #004d50;*/
   text-align: center;
   padding: 10px;
+}
+
+td.font-weight-400 {
+  font-weight: 400;
+}
+
+td.background-color-cell {
+  background-color: white;
 }
 
 table.params-table {
@@ -115,8 +135,18 @@ table.params-table {
   content: counter(each-first-td);
 }
 
+td {
+  width: 22.5%;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+td.width-ten {
+  width: 10%;
+}
+
 table.results-table {
-  width: 80%;
+  width: 450px;
   margin: 0 auto;
 }
 
@@ -128,20 +158,10 @@ td.results-td {
   width: 50%;
 }
 
-td {
-  width: 22.5%;
-  font-weight: 300;
-  font-size: 0.9em;
-}
-
-td.width-ten {
-  width: 10%;
-}
-
 caption {
   padding-bottom: 10px;
   font-weight: 300;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 td input {
@@ -154,7 +174,7 @@ td input {
 aside {
   text-align: center;
   font-style: italic;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 .block-step:last-child {
